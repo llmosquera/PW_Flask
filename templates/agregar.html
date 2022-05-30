@@ -1,0 +1,14 @@
+
+<!--Se nombra los bloques que redirige a la página html-->
+{% extends "layout.html" %}
+{% block body %}
+<!--Titulo-->
+<h1>Agregar tareas</h1>
+<!--Es para enviar todos los datos ingresados -->
+<form action="{{ url_for('agregar') }}" method="post">
+<!--Se guarda los cambios que se realiza en la lista de tareas-->
+	<input type="texto" name="tarea" placeholder="agrega nueva tarea">
+	<button>Agregar</button>
+</form>
+
+{% endblock %}

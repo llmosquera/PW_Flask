@@ -1,0 +1,25 @@
+
+	<!--Aqui definimos todos los bucles con las extenciones de la página html-->
+    {% extends "layout.html" %}
+
+    {% block body %}
+    
+    <h1>LISTA DE TAREAS </h1>
+    
+        <!--Se define las listas de tareas solicitadas -->
+        
+    <div class="form-group">
+        <ul>
+            {% for tarea in tareas %}
+        <!--Lista de tareas de listas desornedanas-->
+        
+            <li>{{ tarea }}</li>
+            {% endfor %}
+        </ul>
+    </div> 
+    <!--
+     funcion que permite ir a la pagina de agregar tarea
+    -->
+    <a href="{{ url_for('agregar') }}">Digita su nueva tarea</a>
+    
+    {% endblock %}

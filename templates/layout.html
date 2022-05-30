@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<html>
+		<head>
+		  <!--Encabezado  y link que permite el enlace con Bootstrap-->
+
+		  <title>Aplicación web con Flask</title> 
+		  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		  
+		
+		</head>
+
+   <body>
+	{% block body %}
+	{% endblock %}
+
+	<!---->
+	<center> 
+	<div>
+		<strong>  FORMULARIO LOGIN</strong> <br>
+		<form>
+		  <div class="form-group">
+
+			<!--Nombres de la personas encargadas -->
+	
+			<label for="exampleInputEmail1">Nombre y Apellido</label>
+			<input type="tarea" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombres y Apellidos" style="width: 300px;">
+		  </div>
+		  <div class="form-group">
+
+			<!--Entrada para el la tarea correspondiente -->
+	
+			<label for="exampleInputEmail1">Tarea correspondiente</label>
+			<input type="tarea" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tarea" style="width: 300px;">
+		  </div>
+		  <div class="form-group">
+
+			<!--Entrada para el correo electronico -->
+	
+			<label for="exampleInputEmail1">Correo Electrónico</label>
+			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejemplos@gmail.com" style="width: 300px;">
+		  </div>
+		  <div class="form-group">
+		  <!---->
+		  <label for="exampleInputEmail1">Tipo de Prioridad</label>
+			<!--Prioridad con opción de lista despegable-->
+			<div class="form-group" style="width: 300px;">
+				<select class="form-control" >
+					<option></option>
+					<option>Alto</option>
+					<option>Medio</option>
+					<option>Bajo</option>
+
+				</select>
+			</div>
+
+
+
+		  <button type="submit" class="btn btn-primary">Enviar</button>
+		</form>
+
+		
+	  </div> </center>
+	</center>
+		
+
+</body>
+</html>
